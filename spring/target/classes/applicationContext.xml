@@ -5,6 +5,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
     
-    
+    <bean id="person" class="com.study.spring.case01.Person"></bean>
 	
 </beans>
