@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="author1" scope="singleton"
@@ -12,7 +14,8 @@
 			<value>男</value>
 		</property>
 		<property name="age">
-			<value>20</value>
+		
+			<null></null>
 		</property>
 
 	</bean>
@@ -20,8 +23,15 @@
 	<bean id="author2" scope="singleton"
 		class="com.study.spring.case01.Author" >
 		
-		<constructor-arg value="Tanny" index="0"></constructor-arg>
-		<constructor-arg value="女" index="1"></constructor-arg>
-		<constructor-arg value="18" index="2" type="java.lang.Double"></constructor-arg>
+		<constructor-arg value="Tanny" ></constructor-arg>
+		<constructor-arg value="女" ></constructor-arg>
+		<constructor-arg value="18" ></constructor-arg>
 		</bean>
+		
+		<bean id="author3" class="com.study.spring.case01.Author"
+			p:name="AMY" p:sex="F" p:age="64"/>
+			
+		<bean id="author4" class="com.study.spring.case01.Author"
+			c:name="Williom" c:sex="M" c:age="31"/>
+		
 </beans>
