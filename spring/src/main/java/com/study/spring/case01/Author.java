@@ -4,6 +4,16 @@ public class Author {
 	private String name;
 	private Character sex;
 	private Integer age;
+	public Author() {
+		
+	}
+	
+	
+	public Author(String name, Character sex, Integer age) {
+		this.name = name;
+		this.sex = sex;
+		this.age = age;
+	}
 	public String getName() {
 		return name;
 	}

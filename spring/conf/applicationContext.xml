@@ -3,9 +3,25 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="author" 
-		scope="singleton"
-		class="com.study.spring.case01.Author" ></bean>
+	<bean id="author1" scope="singleton"
+		class="com.study.spring.case01.Author">
+		<property name="name">
+			<value>Ivy</value>
+		</property>
+		<property name="sex">
+			<value>男</value>
+		</property>
+		<property name="age">
+			<value>20</value>
+		</property>
+
+	</bean>
 	
-	
+	<bean id="author2" scope="singleton"
+		class="com.study.spring.case01.Author" >
+		
+		<constructor-arg value="Tanny" index="0"></constructor-arg>
+		<constructor-arg value="女" index="1"></constructor-arg>
+		<constructor-arg value="18" index="2" type="java.lang.Double"></constructor-arg>
+		</bean>
 </beans>
