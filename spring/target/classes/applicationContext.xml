@@ -11,27 +11,45 @@
 			<value>Ivy</value>
 		</property>
 		<property name="sex">
-			<value>男</value>
+			<value>女</value>
 		</property>
 		<property name="age">
-		
 			<null></null>
 		</property>
 
 	</bean>
-	
+
 	<bean id="author2" scope="singleton"
-		class="com.study.spring.case01.Author" >
-		
-		<constructor-arg value="Tanny" ></constructor-arg>
-		<constructor-arg value="女" ></constructor-arg>
-		<constructor-arg value="18" ></constructor-arg>
-		</bean>
-		
-		<bean id="author3" class="com.study.spring.case01.Author"
-			p:name="AMY" p:sex="F" p:age="64"/>
-			
-		<bean id="author4" class="com.study.spring.case01.Author"
-			c:name="Williom" c:sex="M" c:age="31"/>
-		
+		class="com.study.spring.case01.Author">
+
+		<constructor-arg value="Tanny"></constructor-arg>
+		<constructor-arg value="女"></constructor-arg>
+		<constructor-arg value="18"></constructor-arg>
+	</bean>
+
+	<bean id="author3" class="com.study.spring.case01.Author"
+		p:name="AMY" p:sex="F" p:age="64" />
+
+	<bean id="author4" class="com.study.spring.case01.Author"
+		c:name="Williom" c:sex="M" c:age="31" />
+	<bean id="book1" class="com.study.spring.case01.Book">
+		<property name="name">
+			<value>JAVA8</value>
+		</property>
+		<property name="price">
+			<value>560</value>
+		</property>
+		<property name="author" ref="author1" />
+	</bean>
+	<bean id="book2" class="com.study.spring.case01.Book">
+		<constructor-arg value="Computer"></constructor-arg>
+		<constructor-arg value="600"></constructor-arg>
+		<constructor-arg ref="author2"></constructor-arg>
+	</bean>
+	<bean id="book3" class="com.study.spring.case01.Book"
+		p:name="Chinese" p:price="800" p:author-ref="author3" />
+
+	<bean id="book4" class="com.study.spring.case01.Book"
+		c:name="English" c:price="300" c:author-ref="author4" />
+
 </beans>

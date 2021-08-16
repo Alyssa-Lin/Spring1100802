@@ -4,6 +4,7 @@ public class Author {
 	private String name;
 	private Character sex;
 	private Integer age;
+	
 	public Author() {
 		
 	}

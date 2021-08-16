@@ -1,5 +1,7 @@
 package com.study.spring.case01;
 
+import javax.sound.midi.Soundbank;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -17,7 +19,14 @@ public class MainTest {
 		System.out.println(author3);
 		System.out.println(author4);
 		
-		
+		Book book1 = (Book)ctx.getBean("book1");
+		Book book2 = (Book)ctx.getBean("book2");
+		Book book3 = (Book)ctx.getBean("book3");
+		Book book4 = (Book)ctx.getBean("book4");
+		System.out.println(book1);
+		System.out.println(book2);
+		System.out.println(book3);
+		System.out.println(book4);
 	}
 
 }
