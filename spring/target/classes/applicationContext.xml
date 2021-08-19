@@ -51,5 +51,8 @@
 
 	<bean id="book4" class="com.study.spring.case01.Book"
 		c:name="English" c:price="300" c:author-ref="author4" />
-
+	<bean id="husband" class="com.study.spring.case01.Husband"
+	p:name="Mike" p:wife-ref="wife"/>
+		<bean id="wife" class="com.study.spring.case01.Wife"
+		p:name="Marry" p:husband-ref="husband"/>
 </beans>

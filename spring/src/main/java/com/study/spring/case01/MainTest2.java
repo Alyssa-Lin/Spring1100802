@@ -6,13 +6,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MainTest2 {
 
 	public static void main(String[] args) {
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext2.xml");
-		Husband husband =(Husband)ctx.getBean("husband");
-		Husband husband2 =(Husband)ctx.getBean("husband2");
-		Husband husband3 =(Husband)ctx.getBean("husband3");
-		System.out.println(husband);
-		System.out.println(husband2);
-		System.out.println(husband3);
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+		Husband husband=ctx.getBean(Husband.class);
+		Wife wife = ctx.getBean(Wife.class);
+	
+		System.out.printf("%s是%s的老公\n",husband.getName(),husband.getWife().getName());
+		System.out.printf("%s是%s的老婆",wife.getName(),wife.getHusband().getName());
 	}
 
 }

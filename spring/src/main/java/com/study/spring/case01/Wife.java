@@ -2,18 +2,17 @@ package com.study.spring.case01;
 
 public class Wife {
 	private String name;
-	private String wife;
+	private Husband husband;
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getWife() {
-		return wife;
+	public Husband getHusband() {
+		return husband;
 	}
-	public void setWife(String wife) {
-		this.wife = wife;
+	public void setHusband(Husband husband) {
+		this.husband = husband;
 	}
-	
 }
