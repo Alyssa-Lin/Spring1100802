@@ -3,6 +3,9 @@ package com.study.spring.case01;
 public class Wife {
 	private String name;
 	private Husband husband;
+	public Wife() {
+	
+	}
 	public String getName() {
 		return name;
 	}
