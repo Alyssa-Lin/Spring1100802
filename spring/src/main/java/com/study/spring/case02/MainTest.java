@@ -4,6 +4,7 @@ import java.io.Closeable;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.w3c.dom.ls.LSOutput;
 
 public class MainTest {
 
@@ -15,7 +16,12 @@ public class MainTest {
 		System.out.println(s1);
 		System.out.println(s2);
 		System.out.println(s3);
-		((ClassPathXmlApplicationContext)ctx).close();
+		//((ClassPathXmlApplicationContext)ctx).close();
+		
+
 	}
+	
+		
+		
 
 }
