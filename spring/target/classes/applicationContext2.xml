@@ -7,7 +7,17 @@
 	<!-- 設定檔 -->
 	<bean id="student1" class="com.study.spring.case02.Student"
 		p:id="10662" p:name="YIKO" init-method="init" destroy-method="destroy" >
-
+		<property name="clazzs">
+			<set>
+				<ref bean="clazz1"/>
+				<ref bean="clazz3"/>
+				<ref bean="clazz2"/>
+				<ref bean="clazz2"/>
+				</set>
+		</property>
+		</bean>
+		<bean id="student2" class="com.study.spring.case02.Student"
+		p:id="10788" p:name="YIKO" init-method="init" destroy-method="destroy" >
 		<property name="clazzs">
 			<set>
 				<ref bean="clazz1"/>
@@ -15,13 +25,16 @@
 				<ref bean="clazz2"/>
 				</set>
 		</property>
-		
-
-
-		
 		</bean>
-
-
+		<bean id="student3" class="com.study.spring.case02.Student"
+		p:id="10696" p:name="YIKO" init-method="init" destroy-method="destroy" >
+		<property name="clazzs">
+			<set>
+				<ref bean="clazz2"/>
+				<ref bean="clazz2"/>
+				</set>
+		</property>
+		</bean>
 	<bean id="clazz1" class="com.study.spring.case02.Clazz"
 		p:id="101" p:name="english" p:credit="6" />
 	<bean id="clazz2" class="com.study.spring.case02.Clazz"
