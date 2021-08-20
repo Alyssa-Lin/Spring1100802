@@ -6,7 +6,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 <!-- 設定檔 -->
 	<bean id="student1" class="com.study.spring.case02.Student"
-		p:id="102" p:name="YIKO"
+		p:id="10662" p:name="YIKO"
 		init-method="init"
 		destroy-method="destroy"/>
 		

@@ -1,11 +1,14 @@
 package com.study.spring.case02;
 
+import com.github.javafaker.Superhero;
+
 public class Student {
 	private Integer id;
 	private String name;
 	
 	public Student() {
 		System.out.println("Student constructor");
+		System.out.println(super.toString());
 	}
 	public void init() {
 		System.out.println("Student init");
