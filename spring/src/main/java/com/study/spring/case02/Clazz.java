@@ -1,6 +1,5 @@
 package com.study.spring.case02;
 
-import java.util.Set;
 
 public class Clazz {
 	private Integer id;
