@@ -1,5 +1,7 @@
 package com.study.spring.case02;
 
+import java.util.Set;
+
 public class Clazz {
 	private Integer id;
 	private String name;
@@ -61,6 +63,7 @@ public class Clazz {
 	public String toString() {
 		return "Clazz [id=" + id + ", name=" + name + ", credit=" + credit + "]";
 	}
+
 	
 	
 	
